@@ -2,7 +2,7 @@ let products = {
     data: [
         { 
             name: " Model #1 ",
-            price: "$5.98",
+            price: "5 materials",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQHDBJKJ3YnRWL_DV3AZNWugm7Cf3RW32pwQ&usqp=CAU",
            
         },
@@ -10,87 +10,69 @@ let products = {
         {
             name: "Model #2 ", 
             
-            price: "$11.25",
+            price: "5 materials",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1sXo5fXZwq7AgN7q9k_nNY6DshHSzqbECBM7wm_d2_LpKQ4E" },
 
         {
             name: "Model #3",
-            price: "$5",
+            price: "4 materials",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHFXh8owqlhgpUtDcj_QFQeqyX634wlCf8tg&usqp=CAU"
         },
 
         {
             name: "Model #4",
-            price: "$14.99",
+            price: "5 materials",
             image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEDt56IctCfRb_sBQDk3E0ZgUKSIlyD-PD_zrcY042ZD-NJ4G6"
         },
 
         {
             name: " Model #5",
-            price: "$16.99",
+            price: "6 materials",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnTkjJhIi8fO7VD7v1K9VfA7MimXMxRZ7Mjw&usqp=CAU"
         },
 
         {
             name: "Model #6",
-            price: "$16.99",
+            price: "4 materials",
             image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRknR3utSBTD99-yrjF-GilyzOBeeImraaoZtfM35li2XVpGSND"
         },
 
         {
-            name: "12 Angry Men",
-            price: "$14.99",
-            image: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/949dc08db84df94831890d04c8c8d1b9a58e786629d1e73eaceba892c88abfed._UY500_UX667_RI_TTW_.jpg"
+            name: "Model #7",
+            price: "5 materials",
+            image: "https://scontent.subi.vn/cmsmedia/long-den-vay-ca-dep-mat-va-doc-dao-1e854b9be2162d324e95baaeb255ff38.jpg"
         },
 
         {
-            name: "schindler's list",
-            price: "$14.99",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNsIL7FOL2PA86j0aIn_O9mcyMJnijUIEZg&usqp=CAU"
+            name: "Model #8",
+            price: "6 materials",
+            image: "https://lamthucong.com/wp-content/uploads/2019/08/cach_gap_den_long_trung_thu_bang_giay_chua_bao_gio_de_hon_7.jpg"
         },
 
         {
-            name: "Fight Club",
-            price: "$4.99",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBlwhUYqxPn9RnZLInF6ZaGpj0xnY7aoiD6w&usqp=CAU"
+            name: "Model #9",
+            price: "5 materials",
+            image: "https://cdn.tgdd.vn//News/0//cach-lam-long-den-bang-chai-nhua-03-845x600.jpg"
         },
 
         {
-            name: "Inception",
-            price: "$9.99",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSM29-ZHlZE-d9aKRJWBsK6A5rw7fxuVsgKBOfg3URnfkzW1EWIcvjEuGWJtaljvgMG4Q&usqp=CAU"
+            name: "Model #10",
+            price: "6 materials",
+            image: "https://cdn.tgdd.vn//News/0//cach-lam-long-den-keo-quan-02-845x600.jpg"
         },
 
         {
-            name: "The Matrix",
-            price: "$14.99",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ7EGKviZLraj0zIf6l-zbDLlzBBpNyk7DoQ&usqp=CAU"
+            name: "Model #11",
+            price: "7 materials",
+            image: "https://cdn.tgdd.vn//News/0//cach-lam-long-den-bang-ong-hut-845x600.jpg"
         },
 
         {
-            name: "Se7en",
-            price: "$32.46",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv907mlawyyCht3PCYE9hwMluPzmX1ItsAdg&usqp=CAU"
+            name: "Model #12",
+            price: "5 materials",
+            image: "https://www.wikihow.com/images_en/thumb/2/2e/Make-a-Paper-Lantern-Step-15-Version-6.jpg/550px-nowatermark-Make-a-Paper-Lantern-Step-15-Version-6.jpg.webp"
         },
 
-        {
-            name: "It's a Wonderful Life",
-            price: "$9.99",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnnohnfn4cKWUGPX8hTAparJfpJCQLr4WdCw&usqp=CAU"
-        },
-        {
-            name: "seven samurai",
-            price: "$14.99",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Ln1hi8zMRaY8oHleAFk0jJLfDOR8qUakGA&usqp=CAU"
-        }, {
-            name: "The Silence of the Lambs",
-            price: "$4.99",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAdHZ3LJq35Q8u628SZcZdb-us5HPD8NxKQ&usqp=CAU"
-        }, {
-            name: "Interstellar",
-            price: "$10,14",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGT_TB-IiH7bEDabeB1xDo1hwIfejIy1qxw&usqp=CAU"
-        },
     ]
 }
 

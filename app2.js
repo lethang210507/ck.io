@@ -1,4 +1,4 @@
-fetch(`https://testapi.io/api/trietphan3103/cakes`)
+fetch(`https://testapi.io/api/trietphan3103/namThangAPIJSI`)
     .then(response => response.json())
     .then((data) => {
 
