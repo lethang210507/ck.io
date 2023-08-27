@@ -8,7 +8,7 @@ html {
     font-size: 10px;
 }
 body {
-    background-color: rgb(14, 131, 136);
+    background-color:gray;
 }
 
 .login-wrap {
@@ -18,14 +18,16 @@ body {
     margin-top: 10rem;
     padding: 2.4rem;
     border-radius: 0.8rem;
-    box-shadow: 0.4rem 0.4rem 1rem #ccc;
-    background-color: white;
+    box-shadow: 0.4rem 0.4rem 1rem black;
+    background-color: black;
 }
 
 .login-wrap .title {
     text-align: center;
     margin-bottom: 2.4rem;
     text-transform: uppercase;
+    color: white;
+    font-style: oblique;
 }
 
 .login-wrap .input {
@@ -35,11 +37,11 @@ body {
     margin-bottom: 2.4rem;
     border-radius: 0.5rem;
     border: 0.1rem solid #ccc;
-    border-color: black;
+    border-color: white;
 }
 
 .login-wrap .register-link {
-    color:rgb(46, 79, 79);
+    color: gray;
     font-size: 1.6rem;
     text-decoration: none;
     text-align: center;
@@ -48,12 +50,15 @@ body {
 }
 
 .login-wrap .submit-btn {
-    background-color:rgb(46, 79, 79);;
-    color: white;
+    background-color:white;
+    color: black;
     font-size: 1.6rem;
     font-weight: 500;
     padding: 0.8rem 2.4rem;
     width: 100%;
     border: none;
     border-radius: 0.5rem;
+}
+.noti-mess{
+    color:white
 }

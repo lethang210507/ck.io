@@ -8,7 +8,8 @@ html {
   font-size: 10px;
 }
 body {
-  background-color:rgb(14, 131, 136);
+  background-color: gray
+  ;
 }
 
 .login-wrap {
@@ -18,8 +19,9 @@ body {
   margin-top: 10rem;
   padding: 2.4rem;
   border-radius: 0.8rem;
-  box-shadow: 0.4rem 0.4rem 1rem #ccc;
-  background-color:rgb(203, 228, 222);
+  box-shadow: 0.4rem 0.4rem 1rem gray
+  ;
+  background-color: black;
 }
 
 .login-wrap .title {
@@ -27,7 +29,7 @@ body {
   margin-bottom: 2.4rem;
   text-transform: uppercase;
   font-style:oblique;
-  color:rgb(44, 51, 51);
+  color:white;
 }
 
 .login-wrap .input {
@@ -36,11 +38,12 @@ body {
   font-size: 1.6rem;
   margin-bottom: 2.4rem;
   border-radius: 0.5rem;
-  border: 0.1rem solid #ccc;
+  border: 0.1rem black;
 }
 
 .login-wrap .register-link {
-  color: rgb(46, 79, 79);
+  color: gray;
+
   font-size: 1.6rem;
   text-decoration: none;
   text-align: center;
@@ -49,8 +52,9 @@ body {
 }
 
 .login-wrap .submit-btn {
-  background-color:rgb(46, 79, 79);
-  color: white;
+  background-color: white;
+  color: black
+  ;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 0.8rem 2.4rem;

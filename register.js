@@ -1,3 +1,31 @@
+import { getAuth, signInAnonymously } from "firebase/auth";
+
+const auth = getAuth();
+signInAnonymously(auth)
+  .then(() => {
+    // Signed in..
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ...
+  });
+
+  import { getAuth, onAuthStateChanged } from "firebase/auth";
+
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/auth.user
+    const uid = user.uid;
+    // ...
+  } else {
+    // User is signed out
+    // ...
+  }
+});
+
 let register_form = document.getElementById('register-form');
 
 register_form.addEventListener('submit', function (e) {
@@ -63,3 +91,69 @@ function noti( message, email, password, repassword, status ) {
     noti.style.opacity = 1;
 
 }
+import { FacebookAuthProvider } from "firebase/auth";
+
+const provider = new FacebookAuthProvider();
+provider.addScope('user_birthday');
+import { getAuth } from "firebase/auth";
+
+
+auth.languageCode = 'it';
+// To apply the default browser preference instead of explicitly setting it.
+// auth.useDeviceLanguage();
+provider.setCustomParameters({
+    'display': 'popup'
+  });
+  import { getAuth, signInWithPopup, FacebookAuthProvider } from "firebase/auth";
+
+const auth = getAuth();
+signInWithPopup(auth, provider)
+  .then((result) => {
+    // The signed-in user info.
+    const user = result.user;
+
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const accessToken = credential.accessToken;
+
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = FacebookAuthProvider.credentialFromError(error);
+
+    // ...
+  });
+  import { getAuth, signInWithRedirect } from "firebase/auth";
+
+const auth = getAuth();
+signInWithRedirect(auth, provider);
+import { getAuth, getRedirectResult, FacebookAuthProvider } from "firebase/auth";
+
+const auth = getAuth();
+getRedirectResult(auth)
+  .then((result) => {
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // AuthCredential type that was used.
+    const credential = FacebookAuthProvider.credentialFromError(error);
+    // ...
+  });
+

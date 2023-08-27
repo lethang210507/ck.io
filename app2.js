@@ -15,7 +15,7 @@ fetch(`https://testapi.io/api/trietphan3103/namThangAPIJSI`)
                         <img src="${items.image}">
                         </div>
                         <div class="container">
-                        <a href="${( key % 2 == 0 ) ? './detail.html' : './detail2.html'}" class="product-name">${items.name}</a>
+                        <a href="${( key % 2 == 0 ) ? './detail.html' : './detail2.html' }" class="product-name">${items.name}</a>
                        
                         <h6><b>Price:</b>${items.price}</h6>
                         <button onclick="addToCart(${key})">Add to cart</button>
